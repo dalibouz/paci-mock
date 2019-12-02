@@ -1,0 +1,28 @@
+{
+    "name": "PaciContext",
+    "fields": [
+        {
+            "fieldName": "paciDispatcher",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "paciEngine",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "paciRedirect",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20191202162657",
+    "entityTableName": "paci_context",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
