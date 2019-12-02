@@ -17,7 +17,7 @@ public class Paci implements Serializable {
     @Id
     private String id;
 
-    @Field("has_paci")
+    @Field("hasPaci")
     private Boolean hasPaci;
 
     @Field("url")
