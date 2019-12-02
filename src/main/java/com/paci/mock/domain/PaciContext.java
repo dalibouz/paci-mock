@@ -16,13 +16,13 @@ public class PaciContext implements Serializable {
     @Id
     private String id;
 
-    @Field("paci_dispatcher")
+    @Field("PACIDISPATCHER")
     private String paciDispatcher;
 
-    @Field("paci_engine")
+    @Field("PACIENGINE")
     private String paciEngine;
 
-    @Field("paci_redirect")
+    @Field("PACIREDIRECT")
     private String paciRedirect;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
