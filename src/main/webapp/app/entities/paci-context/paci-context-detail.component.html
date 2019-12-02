@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="paciContext">
+            <h2><span>Paci Context</span> {{paciContext.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Paci Dispatcher</span></dt>
+                <dd>
+                    <span>{{paciContext.paciDispatcher}}</span>
+                </dd>
+                <dt><span>Paci Engine</span></dt>
+                <dd>
+                    <span>{{paciContext.paciEngine}}</span>
+                </dd>
+                <dt><span>Paci Redirect</span></dt>
+                <dd>
+                    <span>{{paciContext.paciRedirect}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/paci-context', paciContext.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
