@@ -33,8 +33,11 @@ spring:
       enabled: false
   data:
     mongodb:
-      uri: mongodb://localhost:27017
-      database: PaciMock
+      host: ds217078.mlab.com
+      port: 17078
+      database: pacimockdb
+      username: dalibouz
+      password: Paci123
   mail:
     host: localhost
     port: 25
