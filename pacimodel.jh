@@ -1,0 +1,14 @@
+entity Paci {
+	hasPaci Boolean,
+    url String
+}
+
+entity PaciContext {
+	paciDispatcher String,
+    paciEngine String,
+    paciRedirect String
+}
+
+relationship OneToOne {
+	Paci{context} to PaciContext,
+}
